@@ -13,6 +13,7 @@ final class CurrencyListViewModel: ObservableObject {
     // MARK: Variables
     private let service: CurrencyService
     private var cancellables: Set<AnyCancellable> = []
+    private var selectedModelCancellable: AnyCancellable?
     private var timerCancellable: AnyCancellable?
     private var currencyModelsDictionary = [Symbol: CurrencyViewModel]() {
         didSet {
@@ -104,13 +105,14 @@ final class CurrencyListViewModel: ObservableObject {
             }
         }
         
-        selectedModel.$baseAmount
+        selectedModelCancellable?.cancel()
+        selectedModelCancellable = nil
+        selectedModelCancellable = selectedModel.$baseAmount
             .sink { [weak self] amount in
                 self?.currencyModels.forEach { model in
                     model.baseAmount = amount
                 }
             }
-            .store(in: &cancellables)
     }
     
     private func createCurrencyModels(
