@@ -38,7 +38,6 @@ struct CurrencyListView: View {
     }
     
     // MARK: Setup
-    @ViewBuilder
     private func setupSelectedCurrencyView() -> some View {
         CurrencyView(model: viewModel.selectedModel)
             .listRowSeparator(.hidden)
@@ -46,7 +45,6 @@ struct CurrencyListView: View {
             .padding(Constants.listItemPadding)
     }
     
-    @ViewBuilder
     private func setupList() -> some View {
         ScrollViewReader { proxy in
             List {
@@ -74,7 +72,6 @@ struct CurrencyListView: View {
         }
     }
     
-    @ViewBuilder
     private func setupProgressView() -> some View {
         ProgressView()
             .progressViewStyle(CircularProgressViewStyle(tint: .selectedCurrencyBackground))

@@ -24,8 +24,7 @@ struct CurrencyView: View {
         .background(model.isSelected ?  Color.selectedCurrencyBackground : Color.currencyBackground)
         .cornerRadius(8)
     }
-    
-    @ViewBuilder
+
     private func setupLeftSideTexts() -> some View {
         VStack(alignment: .leading) {
             Text(model.symbol)
@@ -36,8 +35,7 @@ struct CurrencyView: View {
                 .foregroundStyle(model.isSelected ? .white : Color.secondary)
         }
     }
-    
-    @ViewBuilder
+
     private func setupCalculationTexts() -> some View {
         VStack(alignment: .trailing) {
             Text(model.convertedAmount)
@@ -47,8 +45,7 @@ struct CurrencyView: View {
                 .foregroundStyle(Color.secondary)
         }
     }
-    
-    @ViewBuilder
+
     private func setupTextField() -> some View {
         TextField("", text: $model.baseAmount)
             .keyboardType(.decimalPad)
