@@ -12,7 +12,6 @@ final class CurrencyListViewModel: ObservableObject {
     
     // MARK: Variables
     private let service: CurrencyService
-    private var cancellables: Set<AnyCancellable> = []
     private var selectedModelCancellable: AnyCancellable?
     private var timerCancellable: AnyCancellable?
     private var currencyModelsDictionary = [Symbol: CurrencyViewModel]() {
