@@ -9,14 +9,6 @@ CurrencyConverter is an iOS application designed to provide seamless currency co
 - Efficient network handling using Combine
 - Unit tested with mock services
 
-## Project Structure
-- `CurrencyConverterApp.swift` - Entry point of the application
-- `CurrencyListView/` - UI and ViewModel for currency listing
-- `Service/` - API handling and network layer
-- `Assets.xcassets/` - Icons and colors for UI customization
-- `Extension/` - Swift extensions for enhanced functionality
-- `CurrencyConverterTests/` - Unit tests and mock services
-
 ## Requirements
 - Xcode 14+
 - iOS 15+
