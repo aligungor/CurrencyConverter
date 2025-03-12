@@ -15,3 +15,7 @@ CurrencyConverter is an iOS application designed to provide seamless currency co
 - Swift 5+
 - SwiftUI & Combine for UI and data handling
 - MVVM architecture for clean and modular code
+
+## Support
+If you find this project helpful, feel free to support it by buying me a coffee!  
+[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/aligungor)
