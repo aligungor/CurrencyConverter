@@ -17,7 +17,6 @@ CurrencyConverter is an iOS application designed to provide seamless currency co
 - MVVM architecture for clean and modular code
 
 ## Support
-If you find this project helpful, feel free to support it by buying me a coffee!  
 <a href="https://www.buymeacoffee.com/aligungor" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 80px; width: 280px;">
 </a>
